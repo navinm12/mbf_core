@@ -1,4 +1,3 @@
-import { TimexProperty } from '@microsoft/recognizers-text-data-types-timex-expression';
 import { CardFactory, InputHints, MessageFactory } from 'botbuilder';
 import {
     ComponentDialog,
