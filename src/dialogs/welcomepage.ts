@@ -40,7 +40,7 @@ export class WelcomeDialog extends ComponentDialog {
 
         this.initialDialogId = WATERFALL_DIALOG;
     }
-    private async Step1(stepContext: WaterfallStepContext): Promise<DialogTurnResult> {
+    private async Step1(stepContext: WaterfallStepContext) {
         
         // let cardmsg =await Language_card()
         // await stepContext.context.sendActivity({
@@ -52,8 +52,8 @@ export class WelcomeDialog extends ComponentDialog {
         //   ],
         //  });
        const welcomeCard = CardFactory.adaptiveCard(WelcomeCard);
-         await stepContext.context.sendActivity({ attachments: [welcomeCard] });
-         return Dialog.EndOfTurn
+        await stepContext.context.sendActivity({ attachments: [welcomeCard] });
+        return Dialog.EndOfTurn
        
     }
     private async Step2(stepContext: WaterfallStepContext): Promise<any> {

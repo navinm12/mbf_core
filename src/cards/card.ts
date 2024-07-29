@@ -38,6 +38,6 @@ export function Language_card() {
             }
         ]
     }
-  console.log("=====================", adaptive_card);
+//   console.log("=====================", adaptive_card);
     return adaptive_card;
   }

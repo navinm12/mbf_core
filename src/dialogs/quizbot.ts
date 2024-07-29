@@ -19,7 +19,7 @@ export class QuizDialog extends ComponentDialog {
   
         this.initialDialogId = WATERFALL_DIALOG;  
     }  
-    private async Question1(step: WaterfallStepContext): Promise<any> {  
+    private async Question1(step: WaterfallStepContext) {  
        
     }  
   
