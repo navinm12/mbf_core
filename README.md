@@ -1,105 +1,60 @@
-# core-bot
+Certainly! Here's a GitHub README template for your project:
 
-Bot Framework v4 core bot sample.
+```markdown
+# Your Project Name
 
-This bot has been created using [Bot Framework](https://dev.botframework.com), it shows how to:
-
-- Use [LUIS](https://www.luis.ai) to implement core AI capabilities
-- Implement a multi-turn conversation using Dialogs
-- Handle user interruptions for such things as `Help` or `Cancel`
-- Prompt for and validate requests for information from the user
+A brief description of your project.
 
 ## Prerequisites
 
-This sample **requires** prerequisites in order to run.
+Before you begin, ensure you have met the following requirements:
 
-### Overview
-This bot uses [LUIS](https://www.luis.ai), an AI based cognitive service, to implement language understanding.
+- You have installed [Node.js](https://nodejs.org/en)
+- You have installed [BotFramework Emulator](https://github.com/microsoft/BotFramework-Emulator)
 
-- [Node.js](https://nodejs.org) version 10.14 or higher
+## Installation
 
-    ```bash
-    # determine node version
-    node --version
-    ```
+To install the project, follow these steps:
 
-### Create a LUIS Application to enable language understanding
+1. Clone the repository
+   ```bash
+   git clone https://github.com/your-username/your-project-name.git
+   ```
+2. Navigate to the project directory
+   ```bash
+   cd your-project-name
+   ```
+3. Install the dependencies
+   ```bash
+   npm install
+   ```
 
-The LUIS model for this example can be found under `cognitiveModels/FlightBooking.json` and the LUIS language model setup, training, and application configuration steps can be found [here](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-howto-v4-luis?view=azure-bot-service-4.0&tabs=javascript).
+## Building the Bot
 
-Once you created the LUIS model, update `.env` with your `LuisAppId`, `LuisAPIKey` and `LuisAPIHostName`.
+To build the bot source code, run the following command:
 
-```text
-LuisAppId = "Your LUIS App Id"
-LuisAPIKey = "Your LUIS Subscription key here"
-LuisAPIHostName = "Your LUIS App region here (i.e: westus.api.cognitive.microsoft.com)"
+```bash
+npm run build
 ```
 
-## To try this sample
+## Running the Sample
 
-- Clone the repository
+To run the sample, use the following command:
 
-    ```bash
-    git clone https://github.com/microsoft/botbuilder-samples.git
-    ```
+```bash
+npm start
+```
 
-- In a terminal, navigate to `samples/typescript_nodejs/13.core-bot`
+## Usage
 
-    ```bash
-    cd samples/typescript_nodejs/13.core-bot
-    ```
+Explain how to use the project with some examples.
 
-- Install modules
+## Contributing
 
-    ```bash
-    npm install
-    ```
+To contribute to this project, follow these steps:
 
-- Setup LUIS
-
-    The prerequisite outlined above contain the steps necessary to provision a language understanding model on www.luis.ai.  Refer to _Create a LUIS Application to enable language understanding_ above for directions to setup and configure LUIS.
-
-- Build the bot source code
-
-    ```bash
-    npm run build
-    ```
-
-- Run the sample
-
-  ```bash
-  npm start
-  ```
-
-## Testing the bot using Bot Framework Emulator
-
-[Bot Framework Emulator](https://github.com/microsoft/botframework-emulator) is a desktop application that allows bot developers to test and debug their bots on localhost or running remotely through a tunnel.
-
-- Install the Bot Framework Emulator version 4.9.0 or greater from [here](https://github.com/Microsoft/BotFramework-Emulator/releases)
-
-### Connect to the bot using Bot Framework Emulator
-
-- Launch Bot Framework Emulator
-- File -> Open Bot
-- Enter a Bot URL of `http://localhost:3978/api/messages`
-
-## Deploy the bot to Azure
-
-To learn more about deploying a bot to Azure, see [Deploy your bot to Azure](https://aka.ms/azuredeployment) for a complete list of deployment instructions.
-
-## Further reading
-
-- [Bot Framework Documentation](https://docs.botframework.com)
-- [Bot Basics](https://docs.microsoft.com/azure/bot-service/bot-builder-basics?view=azure-bot-service-4.0)
-- [Dialogs](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-concept-dialog?view=azure-bot-service-4.0)
-- [Gathering Input Using Prompts](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-prompts?view=azure-bot-service-4.0&tabs=csharp)
-- [Activity processing](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-concept-activity-processing?view=azure-bot-service-4.0)
-- [Azure Bot Service Introduction](https://docs.microsoft.com/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-4.0)
-- [Azure Bot Service Documentation](https://docs.microsoft.com/azure/bot-service/?view=azure-bot-service-4.0)
-- [Azure CLI](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest)
-- [Azure Portal](https://portal.azure.com)
-- [Language Understanding using LUIS](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/)
-- [Channels and Bot Connector Service](https://docs.microsoft.com/en-us/azure/bot-service/bot-concepts?view=azure-bot-service-4.0)
-- [TypeScript](https://www.typescriptlang.org)
-- [Restify](https://www.npmjs.com/package/restify)
-- [dotenv](https://www.npmjs.com/package/dotenv)
+1. Fork this repository.
+2. Create a branch: `git checkout -b <branch_name>`.
+3. Make your changes and commit them: `git commit -m '<commit_message>'`.
+4. Push to the original branch: `git push origin <project_name>/<location>`.
+5. Create the pull request.
